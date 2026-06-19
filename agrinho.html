@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustentabilidade Inteligente - Global Hub Ultra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Sustentabilidade Inteligente</h1>
+    <p>O Sistema Operacional da Biosfera: Tecnologia, Ética e Engenharia Planetária.</p>
+  </header>
+
+  <img src="http://googleusercontent.com/image_generation_content/0" alt="Painel Global Hub de Sustentabilidade" class="banner-img">
+
+  <nav class="tabs-nav">
+    <button class="tab-btn active" onclick="switchTabSystem(event, 'aba-artigos-texto')">📖 Artigos & Visões</button>
+    <button class="tab-btn" onclick="switchTabSystem(event, 'aba-central-jogos')">🎮 Laboratório de Jogos</button>
+    <button class="tab-btn" onclick="switchTabSystem(event, 'aba-simulador-politicas')">🔬 Matriz de Políticas</button>
+  </nav>
+
+  <div id="aba-artigos-texto" class="tab-content active">
+    <main class="card article-body">
+      <h2>O Manifesto da Civilização Ecológica Cognitiva</h2>
+      <p>A transição para a sustentabilidade inteligente exige que abandonemos o modelo arcaico de encarar a natureza de forma passiva. As metrópoles do futuro operam sob o conceito de infraestrutura integrada, onde sensores físicos, redes de dados e biologia molecular coexistem em simbiose perfeita.</p>
+      
+      <div class="quote-box">
+        "O desperdício e a poluição não são consequências inevitáveis do progresso, são apenas falhas de design e erros de cálculo algorítmico."
+      </div>
+
+      <h3>1. A Internet das Plantas e Fungos (The Wood Wide Web)</h3>
+      <p>Pesquisas avançadas em bio-informática revelam que os sistemas de micélio subterrâneo funcionam como uma infraestrutura de dados complexa na natureza. No ecossistema inteligente, aprendemos a interagir amigavelmente com essa rede. Nano-sensores injetados em corredores florestais captam alterações químicas nas raízes, alertando sistemas centrais sobre estresse hídrico ou contaminações antes que as plantas manifestem danos físicos.</p>
+
+      <h3>2. Biomimética Estrutural e Materiais Vivos</h3>
+      <p>A arquitetura civil moderna funde biologia com concreto. Novos compostos utilizam matrizes fúngicas integradas com bactérias calcificantes. Quando fissuras microscópicas aparecem em estruturas urbanas devido ao desgaste, a entrada de humidade ativa estes microrganismos. Eles digerem compostos químicos e expelem calcário organicamente, selando as rachaduras sem intervenção humana.</p>
+
+      <div class="highlight-card">
+        <strong>Georreferenciamento de Carbono:</strong> Através de livros de registro distribuídos (blockchains verdes), distritos residenciais gerenciam créditos ambientais em tempo real. O oxigênio purificado por fachadas vivas é tokenizado e financia autonomamente a expansão energética dos bairros periféricos.
+      </div>
+
+      <h3>3. Iluminação Fotoluminescente Descentralizada</h3>
+      <p>Ao isolar enzimas de luciferase encontradas em organismos marinhos e aplicá-las na seiva de árvores urbanas por edição genética controlada, engenheiros criaram calçadas biológicas. Essas plantas emitem um brilho natural suave durante a noite, reduzindo severamente a necessidade de postes de luz elétricos tradicionais.</p>
+    </main>
+
+    <aside class="card">
+      <h2 style="font-size: 1.3rem; margin-bottom: 1rem;">Glossário de Inovação</h2>
+      <p style="font-size: 0.95rem; margin-bottom: 1rem;"><strong>• Bio-Digital Twin:</strong> Cópias virtuais planetárias que processam dados meteorológicos em tempo real para prever desastres ecológicos.</p>
+      <p style="font-size: 0.95rem; margin-bottom: 1rem;"><strong>• Economia Regenerativa:</strong> Modelos comerciais onde o lucro corporativo está indexado à quantidade de recursos recuperados e devolvidos limpos à natureza.</p>
+      <p style="font-size: 0.95rem;"><strong>• Upcycling Molecular:</strong> Despoluição automatizada utilizando nano-robôs projetados para quebrar polímeros de microplásticos em rios.</p>
+    </aside>
+  </div>
+
+  <div id="aba-central-jogos" class="tab-content">
+    <main class="card">
+      <h2>🎮 Jogo 1: Simulador Eco-Grid</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Monitore as redes e mantenha o equilíbrio ecológico urbano antes do colapso térmico!</p>
+      
+      <div class="game-box-core">
+        <div class="stats-panel-row">
+          <div class="stat-block-unit">Qualidade do Ar<span id="grid-ar-display">100%</span></div>
+          <div class="stat-block-unit">Bateria Urbana<span id="grid-en-display" style="color: var(--secondary);">80</span></div>
+        </div>
+        <div class="btn-grid-actions">
+          <button class="btn-interactive-click" onclick="executeGridLogic('floresta')">🌿 Plantar Floresta</button>
+          <button class="btn-interactive-click" onclick="executeGridLogic('bateria')">⚡ Ativar Fusão Tech</button>
+        </div>
+        <p id="grid-system-alert" style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted); font-style: italic;">Sistema operacional ativo. Aguardando comandos.</p>
+      </div>
+    </main>
+
+    <aside class="card">
+      <h2>🃏 Jogo 2: Eco-Trunfo Molecular</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1rem;">Escolha o melhor atributo do seu projeto sustentável para vencer o algoritmo oponente!</p>
+      
+      <div class="card-game-deck-view">
+        <div class="molecular-card-item">
+          <h3 id="trunfo-card-title" style="color: var(--primary); font-size: 1.2rem; margin-bottom: 0.75rem;">Filtro de Microalgas</h3>
+          <div class="attribute-clickable-row" onclick="triggerCardDuel('impacto')">🌱 Impacto Ecológico: <span id="val-attr-imp">98</span></div>
+          <div class="attribute-clickable-row" onclick="triggerCardDuel('tech')">⚡ Nível Tecnológico: <span id="val-attr-tech">80</span></div>
+          <div class="attribute-clickable-row" onclick="triggerCardDuel('custo')">💰 Custo de Patente: <span id="val-attr-cost">50</span></div>
+        </div>
+        <p id="trunfo-duel-logs" style="font-size: 0.9rem; color: var(--secondary); font-weight: bold;">Sua vez! Selecione um atributo para duelar.</p>
+        <button class="btn-primary-action" style="margin-top: 1rem; display:none;" id="btn-reset-trunfo-card" onclick="loadNextTrunfoCard()">Próxima Patente</button>
+      </div>
+    </aside>
+  </div>
+
+  <div id="aba-simulador-politicas" class="tab-content">
+    <main class="card">
+      <h2>🔬 Laboratório de Políticas Planetárias</h2>
+      <p style="margin-bottom: 1.5rem; color: var(--text-muted);">Ative diretrizes governamentais e observe a resposta mecânica direta nos marcadores climáticos globais.</p>
+      <div class="policy-selection-grid">
+        <button class="policy-toggle-button" onclick="evaluatePolicyChanges(this, -0.5, 20, 'Fusão Quântica')">⚛️ Redes de Fusão Quântica</button>
+        <button class="policy-toggle-button" onclick="evaluatePolicyChanges(this, -0.3, 15, 'Dieta Bio-Sintética')">🥗 Dieta Global Bio-Sintética</button>
+        <button class="policy-toggle-button" onclick="evaluatePolicyChanges(this, -0.8, 30, 'Mineração Espacial')">🛰️ Mineração de Asteroides</button>
+        <button class="policy-toggle-button" onclick="evaluatePolicyChanges(this, -1.2, 50, 'Reflorestamento')">🌳 Reflorestamento Autônomo</button>
+      </div>
+      
+      <h3 style="font-size: 1.1rem; margin-top: 2rem; margin-bottom: 0.5rem; color: #fff;">Logs do Console de Comando:</h3>
+      <div class="terminal-log-box" id="terminal-logs">
+        [SYSTEM] Aguardando ativação de diretrizes macroecológicas...
+      </div>
+    </main>
+
+    <aside class="card">
+      <h2>📊 Status da Biosfera</h2>
+      
+      <div class="planet-impact-dashboard">
+        <p style="font-size: 0.9rem; color: var(--text-muted);">Temperatura Global</p>
+        <div class="progress-meter-container">
+          <div id="fill-temp-progress" class="progress-meter-fill" style="width: 85%; background: var(--accent);"></div>
+        </div>
+        <p id="label-temp-status" style="font-size: 1.4rem; font-weight: bold; color: var(--accent);">+2.5°C</p>
+      </div>
+
+      <div class="planet-impact-dashboard" style="margin-top: 1.5rem;">
+        <p style="font-size: 0.9rem; color: var(--text-muted);">Índice de Biodiversidade</p>
+        <div class="progress-meter-container">
+          <div id="fill-bio-progress" class="progress-meter-fill" style="width: 30%; background: var(--primary);"></div>
+        </div>
+        <p id="label-bio-status" style="font-size: 1.4rem; font-weight: bold; color: var(--primary);">30%</p>
+      </div>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
